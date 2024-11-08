@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+h1:first-of-type{
+
+    padding: 5px;
+    text-align: center;
+}
+h1:first-of-type span{
+    background-color: yellow;
+}
+h1{
+    color: green;
+    text-align: center;
+}
+p{
+    color: rgb(5, 67, 96);
+}
