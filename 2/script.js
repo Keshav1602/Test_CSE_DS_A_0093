@@ -6,10 +6,13 @@ async function fetchData() {
         console.log(data);
         data.forEach((element) => {
             console.log(`Node Id : ${element.login}`);
-            let p = document.createElement('p');
+            let p = document.createElement('a');
             p.innerText=element.login;
+            p.setAttribute("href",element.html_url)
+            let d = document.createElement('div');
+            d.appendChild(p);
             let top = document.getElementById('top');
-            top.appendChild(p);
+            top.appendChild(d);
         });
     }
     catch(err){
